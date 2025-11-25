@@ -130,6 +130,7 @@ export interface StreamedMetadata {
 
 export interface StreamedResult {
   type: 'candidate'
+  status?: 'partial' | 'full'
   index: number
   total: number
   tier: number
